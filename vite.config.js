@@ -80,18 +80,18 @@ export default defineConfig({
     }))],
   resolve: {
     alias: {
-      '@style': resolve(__dirname, 'src/assets/scss/style.module.scss'),
-      '@assets': resolve(__dirname, 'src/assets'),
-      '@components': resolve(__dirname, 'src/components'),
-      '@authentication': resolve(__dirname, 'src/Authentication'),
-      '@context': resolve(__dirname, 'src/context'),
-      '@hooks': resolve(__dirname, 'src/hooks'),
-      '@layouts': resolve(__dirname, 'src/layouts'),
-      '@pages': resolve(__dirname, 'src/pages'),
-      '@routes': resolve(__dirname, 'src/routes'),
-      '@store': resolve(__dirname, 'src/store'),
-      '@utils': resolve(__dirname, 'src/utils'),
-      '@error': resolve(__dirname, 'src/Errors')
+      '@style': resolve(__dirname, 'Src/assets/scss/style.module.scss'),
+      '@assets': resolve(__dirname, 'Src/assets'),
+      '@components': resolve(__dirname, 'Src/components'),
+      '@authentication': resolve(__dirname, 'Src/Authentication'),
+      '@context': resolve(__dirname, 'Src/context'),
+      '@hooks': resolve(__dirname, 'Src/hooks'),
+      '@layouts': resolve(__dirname, 'Src/layouts'),
+      '@pages': resolve(__dirname, 'Src/pages'),
+      '@routes': resolve(__dirname, 'Src/routes'),
+      '@store': resolve(__dirname, 'Src/store'),
+      '@utils': resolve(__dirname, 'Src/utils'),
+      '@error': resolve(__dirname, 'Src/Errors')
 
     },
 
