@@ -1,0 +1,30 @@
+$start :0%;
+$end: 100%;
+$toast_start: 50%;
+$toast_top: 0%;
+$toast_maxWidth: 25%;
+$toast_zIndex: 1060;
+$toast_position: fixed;
+
+%toast_layout {
+  position: $toast_position ;
+  left: $toast_start;
+  top: $toast_top;
+  max-width: $toast_maxWidth;
+  z-index: $toast_zIndex ;
+  transform: translateY($end);
+}
+
+.fadeIn {
+  @extend %toast_layout;
+
+
+}
+
+.fadeOut {
+
+  @extend %toast_layout;
+  @include fadeOut;
+  @include userSelect;
+
+}

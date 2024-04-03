@@ -1,0 +1,24 @@
+$height : 2.5em;
+
+.uploadNavbar {
+  display: flex;
+  justify-content: space-between;
+  height: 50px;
+
+  @media (max-width:768px) {
+    display: inline-flex;
+    height: 100%;
+
+    .loaderBox {
+      height: $height;
+
+    }
+
+    div {
+      button {
+        border: 1px solid red;
+        white-space: normal !important;
+      }
+    }
+  }
+}

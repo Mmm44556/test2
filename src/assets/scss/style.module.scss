@@ -1,0 +1,40 @@
+@import "_variables.scss";
+
+
+// ------Pages-----
+// - 個人資料
+@import "./pages/_profile.scss";
+
+// - 驗證系統
+@import "./pages/_authentication.scss";
+
+
+// ------Components-----
+// - 導覽列
+@import "./components/_navigator.scss";
+
+// - 查詢列
+@import "./components/_searchBar.scss";
+
+// - 系統上傳提示
+@import "./components/_fetchperformance.scss";
+
+// - 資料夾列表麵包屑
+@import "./components/_pathcrumb.scss";
+
+// - 資料夾列表
+@import "./components/_directorylist.scss";
+
+// - 上傳按鈕
+@import "./components/_getdata.scss";
+
+//
+@import "./components/uploaderdropdown.scss";
+
+@import "./components/_uploadcard.scss";
+
+// - 創建資料夾按紐
+@import "./components/_createfolder.scss";
+
+// - 儀錶板
+@import "./components/_dashboard.scss";

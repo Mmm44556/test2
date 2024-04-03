@@ -1,0 +1,31 @@
+
+
+%userSelect {
+  cursor: pointer;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+.fileList {
+
+  tr {
+    @extend %userSelect;
+    height: 90px;
+  }
+}
+
+.focusBackGround {
+  background-color: rgb(212, 214, 218);
+}
+
+.buttonStack {
+  width: min-content;
+  margin-left: 50%;
+  margin-top: 15px;
+  transform: translateX(-50%);
+
+
+}

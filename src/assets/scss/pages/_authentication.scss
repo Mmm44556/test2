@@ -1,0 +1,213 @@
+* {
+  border-radius: 0;
+  font-size: calc(10px + 0.390525vw);
+  font-family: "Gill Sans", sans-serif;
+  --bs-nav-tabs-border-radius: 0;
+
+}
+
+
+
+.authContainer {
+  height: 100vh;
+  position: relative;
+
+
+
+
+  &> :first-child {
+    height: 100%;
+  }
+
+}
+
+// Login input style
+@mixin input {
+  padding: 0.25rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.375rem;
+
+  @content;
+}
+
+.login {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.875rem;
+
+  /* 设置元素之间的间距 */
+  p:first-child {
+    grid-column-start: 1;
+    /* 第一个元素从第一列开始 */
+    grid-column-end: 4;
+    /* 第一个元素占据三列 */
+  }
+
+  div:nth-last-child(-n+2) {
+    grid-column: 1 / -1;
+    /* 倒数两个元素从第一列到最后一列 */
+
+  }
+
+  tbody {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    background-color: #fff;
+    @include input;
+
+    tr {
+      th {
+        padding: 0 2px;
+
+        label {
+          margin-bottom: 4px;
+        }
+
+        input {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  svg {
+    margin: 10px 3px;
+    border-right: 1px solid #dee2e6;
+    background-color: #FFFFFF;
+    font-size: 2rem;
+    position: absolute;
+  }
+
+  &>* {
+    transform: translateX(-50%);
+    margin: 18px 0px 0px 50%;
+    width: 70%;
+    min-height: 50px;
+
+    &:has(input:required:invalid)::after {
+      content: "*";
+      color: #FF0000;
+      font-size: 25px;
+      position: absolute;
+      top: 25%;
+      right: 5%;
+    }
+
+    &:last-child {
+      display: flex;
+
+      button {
+        @include input;
+        margin: 10px;
+        padding: 10px;
+        font-size: 18px;
+        font-weight: 700;
+
+      }
+
+
+      @media screen {
+        display: contents;
+      }
+
+
+
+    }
+  }
+
+  input {
+    @include input {
+      text-indent: 40px;
+      height: 50px;
+    }
+
+  }
+
+  input[id='gender'],
+  input[id='age'] {
+    text-indent: 10px;
+
+  }
+
+
+
+
+
+
+}
+
+.gender {
+  cursor: pointer;
+  margin: 0;
+
+  th {
+    position: relative;
+
+    &:hover {
+      background-color: lightgray;
+    }
+  }
+
+  label {
+    cursor: pointer;
+  }
+
+  input {
+    position: absolute;
+    left: 40%;
+    bottom: -105%;
+  }
+
+}
+
+.authCheck {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b40404ab;
+  animation: showUp 1s forwards;
+
+  p {
+    display: contents;
+    margin: 0;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    letter-spacing: 1.8px;
+    animation: shake 2s;
+
+    @keyframes shake {
+      from {
+        font-size: 30px;
+      }
+
+      to {
+        font-size: 18px;
+      }
+    }
+
+    svg {
+      font-size: 28px;
+    }
+  }
+
+  @keyframes showUp {
+    from {
+      height: 0;
+      opacity: 0;
+    }
+
+    to {
+      height: 8%;
+      opacity: 1;
+    }
+  }
+}
+
+.regiCheck {
+  text-align: center;
+  background-color: rgb(74 179 74);
+  @include fadeOut;
+}

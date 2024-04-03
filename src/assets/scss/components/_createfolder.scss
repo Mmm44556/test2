@@ -1,0 +1,22 @@
+
+.folderToast {
+  position: absolute;
+  max-width: none;
+  transform: translateX(-65%);
+
+  @media (max-width:768px) {
+    transform: none;
+    max-width: max-content;
+
+  }
+
+}
+
+.submitBtn {
+  cursor: pointer;
+
+  &:hover {
+    background-color: rgb(181, 181, 181);
+  }
+
+}

@@ -1,0 +1,46 @@
+$black : #000000;
+$fontSize : 1.2rem;
+$fontSize1: 1.5rem;
+%a {
+  text-decoration: none;
+  color: $black;
+  font-size: $fontSize;
+
+}
+
+.rootStyle {
+
+  a {
+    @extend %a;
+    cursor: pointer !important;
+  }
+
+}
+
+.linkStyle {
+  li {
+    a {
+      @extend %a;
+      cursor: default;
+    }
+  }
+}
+
+.backLinkStyle {
+  a {
+    @extend %a;
+    cursor: pointer !important;
+
+    &:hover {
+      border: 1px solid $black;
+    }
+  }
+
+}
+
+.lastLinkStyle {
+  a {
+    @extend %a;
+    font-size: $fontSize1 !important;
+  }
+}

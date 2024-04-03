@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "moduleResolution": "Node",
+    // "checkJs": true,
+    // "skipLibCheck": true,
+    "module": "ESNext",
+    "target": "es6",
+    "lib": [
+      "ES2022",
+      "DOM"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "src/**/*"
+  ]
+}

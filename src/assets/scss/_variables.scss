@@ -1,0 +1,53 @@
+// Unites height
+$height : 2.5em;
+
+// font
+$fontSize : 1.2rem;
+$fontSize1: 1.5rem;
+//color
+$black : #000000;
+
+//user_select
+@mixin userSelect {
+  cursor: default;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+
+
+//animation
+$start :0%;
+$end: 100%;
+$opacity: 1;
+
+@mixin fadeOut {
+  animation: fadeOut 2s forwards;
+
+}
+
+@mixin slideDown {
+  animation: slideDown 1s forwards;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY($start);
+  }
+
+  to {
+    transform: translateY($end);
+  }
+}

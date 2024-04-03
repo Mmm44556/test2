@@ -1,0 +1,44 @@
+$start :0%;
+$end:100%;
+.uploadWrap {
+  >div:first-child {
+    transform: translateY(100%);
+    animation: slideDown 1s forwards;
+  }
+
+  &:hover {
+    >div:first-child {
+      animation: slideUp 1s forwards;
+    }
+  }
+
+
+}
+@keyframes slideUp {
+  from{
+    transform: translateY($end);
+  }
+  to{
+transform: translateY($start);
+  }
+}
+@keyframes slideDown {
+  from {
+    transform: translateY($start);
+  }
+
+  to {
+    transform: translateY($end);
+  }
+}
+.uploadCard {
+  &>div {
+    padding: 0px;
+    margin-top: 0;
+  }
+
+  min-width: 400px;
+  height: 200px;
+  overflow-y: scroll;
+
+}

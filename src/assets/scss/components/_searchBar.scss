@@ -1,0 +1,16 @@
+.xsBreakPoint {
+  display: initial;
+
+  @media(width >768px) {
+    display: none;
+  }
+
+}
+
+.xsSearchInput {
+  margin-bottom: 5px;
+  @media(width <576px) {
+    width: 65%;
+    margin-left: auto;
+  }
+}

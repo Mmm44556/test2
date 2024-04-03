@@ -1,0 +1,52 @@
+// @import '~bootstrap/scss/bootstrap';
+
+.accordion {
+  --bs-accordion-btn-icon-transform: rotate(90deg);
+  --bs-accordion-active-bg: #eaecee;
+}
+
+.uploaderDropDown {
+
+  button {
+    padding: 3px 3px;
+    background-color: #f8f9fa;
+  }
+
+  &+div {
+    position: fixed;
+    top: 0;
+    left: -5px;
+    transform: translateX(-100%);
+    min-width: 50%;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    border: 1px solid #000000;
+
+    div {
+
+      label {
+        display: block;
+        font-size: 1.3rem;
+        cursor: pointer;
+        padding: 3px 6px;
+
+        &:nth-child(2) {
+          border-bottom: 1px solid #e7e7e7;
+          border-top: 1px solid #e7e7e7;
+        }
+
+        &:hover {
+          background-color: #e7e7e7;
+        }
+
+        input {
+          display: none;
+        }
+      }
+    }
+
+
+
+
+  }
+}
